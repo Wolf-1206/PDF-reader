@@ -90,4 +90,4 @@ Specify your license here (e.g., MIT, Apache 2.0)
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Contact
-Add your contact information or links here.
+Email - sikarwarnishant31@gmail.com
