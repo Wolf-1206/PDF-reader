@@ -1,0 +1,235 @@
+/* History Table Fixes */
+.history-table-container {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(31,38,135,0.04);
+  background: #fff;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.history-table {
+  width: 100%;
+  min-width: 600px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background: #fff;
+}
+.history-table th, .history-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e3e8f0;
+  text-align: left;
+  font-size: 1.05em;
+  box-sizing: border-box;
+}
+.history-table th {
+  background: #f4f7fa;
+  font-weight: 700;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.history-table tr:last-child td {
+  border-bottom: none;
+}
+/* Modern Upload Button */
+.modern-upload-btn {
+  background: linear-gradient(90deg,#1976d2,#43a7fd);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #1976d255;
+  padding: 12px 0;
+  min-width: 140px;
+  font-weight: 700;
+  font-size: 1.08em;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  outline: none;
+  margin-right: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.modern-upload-btn:disabled {
+  background: #b6c7e3;
+  color: #fff;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.modern-upload-btn:hover:not(:disabled),
+.modern-upload-btn:focus:not(:disabled) {
+  background: linear-gradient(90deg,#125ea2,#1976d2);
+  box-shadow: 0 4px 16px #1976d233;
+}
+
+
+/* Business Modern UI Theme */
+body {
+  font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif;
+  background: #f6f8fa;
+  color: #1a2233;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f6f8fa;
+}
+
+.App-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: #1a2233;
+  padding: 1rem 3vw;
+  color: #fff;
+  border-bottom: 2px solid #e3e8f0;
+  font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif;
+  font-size: 1.15rem;
+  box-shadow: 0 2px 8px rgba(26,34,51,0.06);
+}
+.App-nav button {
+  background: none;
+  border: none;
+  color: #b6c7e3;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+  font-weight: 500;
+}
+.App-nav button.active,
+.App-nav button:hover {
+  background: #2e3a59;
+  color: #fff;
+}
+.App-logo-link {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+.App-logo-small {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.main-window {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: auto;
+  background: #f6f8fa;
+  color: #1a2233;
+  padding: 2.5rem 0 0 0;
+}
+
+/* Business Card Style */
+.glassmorphism, .glass-card, .business-card {
+  background: #fff !important;
+  box-shadow: 0 4px 24px rgba(31,38,135,0.08);
+  border-radius: 18px;
+  border: 1.5px solid #e3e8f0;
+  padding: 2.2rem 2.5rem;
+  margin: 0 auto 2.5rem auto;
+  max-width: 900px;
+  text-align: left;
+}
+
+/* Data Table/Panel Improvements */
+.extracted-text pre,
+.extracted-result-card pre {
+  background: #f4f7fa;
+  border-radius: 10px;
+  padding: 18px 16px;
+  font-size: 1.08em;
+  color: #222;
+  font-family: 'Menlo', 'Consolas', monospace;
+  margin: 0 0 10px 0;
+  overflow-x: auto;
+}
+.extracted-result-card {
+  border: 1px solid #e3e8f0;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(31,38,135,0.06);
+  margin-bottom: 2rem;
+  padding: 1.5rem 2rem;
+}
+.extracted-result-card .download-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: background 0.2s;
+}
+.extracted-result-card .download-btn:hover {
+  background: #125ea2;
+}
+
+/* Table-like styling for CSV/summary */
+.extracted-text table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(31,38,135,0.04);
+}
+.extracted-text th, .extracted-text td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e3e8f0;
+  text-align: left;
+  font-size: 1.05em;
+}
+.extracted-text th {
+  background: #f4f7fa;
+  font-weight: 700;
+}
+.extracted-text tr:last-child td {
+  border-bottom: none;
+}
+
+.App-footer {
+  background: #1a2233;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 1.12rem;
+  border-top: 2px solid #e3e8f0;
+  margin-top: auto;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -2px 8px rgba(26,34,51,0.04);
+}
+
+@media (max-width: 900px) {
+  .glassmorphism, .glass-card, .business-card {
+    padding: 1.2rem 1rem;
+    max-width: 98vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-window {
+    padding: 1rem 0.5rem;
+  }
+  .App-nav {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.7rem 1rem;
+  }
+}

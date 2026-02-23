@@ -1,0 +1,8 @@
+flask
+flask-cors
+PyPDF2
+pytesseract
+pdf2image
+Pillow
+python-dotenv
+langdetect

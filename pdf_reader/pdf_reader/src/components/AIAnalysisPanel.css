@@ -1,0 +1,44 @@
+.ai-analysis-panel {
+  margin: 32px auto;
+  padding: 32px 24px;
+  max-width: 600px;
+  background: rgba(255,255,255,0.18);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.28);
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+.ai-analysis-panel h3 {
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #2d2d2d;
+}
+.ai-analysis-list {
+  list-style: none;
+  padding: 0;
+}
+.ai-analysis-item {
+  background: rgba(255,255,255,0.32);
+  margin-bottom: 18px;
+  padding: 16px 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.08);
+  font-size: 1rem;
+}
+.ai-analysis-loading {
+  color: #0078d4;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.ai-analysis-error {
+  color: #d32f2f;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.ai-analysis-empty {
+  color: #888;
+  font-style: italic;
+  margin-top: 12px;
+}
